@@ -3,16 +3,11 @@
 ## 1. Seite online ✅ erledigt
 https://planerwerk.github.io/
 
-## 2. Buy Me a Coffee einrichten (10 Minuten, kostenlos)
-1. Auf buymeacoffee.com registrieren. Auszahlung über Stripe aufs Bankkonto, PayPal ist nicht nötig.
-2. Kaffee-Preis auf 3 € setzen. Gebühren (5 % + Stripe ca. 2,9 % + 0,30 $) gehen vom Umsatz ab, bei 1 € bliebe fast nichts übrig.
-3. **Shop → neues Produkt** (digitaler Download):
-   - Titel: `Planer-Paket 2027 – 96 Vorlagen zum Ausdrucken`
-   - Preis: 2 € (oder „Pay what you want“, falls angeboten)
-   - Datei: `Planerwerk-Premium-2027.zip` (liegt im Chat)
-4. Profil-Link und Produkt-Link Claude schicken oder in `js/config.js` bei `support` und `premium` eintragen.
+## 2. Bezahlen ✅ ohne Anbieter
+Der Button „Per E-Mail bestellen“ öffnet eine Mail an dich. Du antwortest mit dem ZIP und lässt dir die 2 € so zahlen, wie du willst: bar, per Überweisung oder über PayPal.
+Wenn es läuft, kannst du später einen Shop anbinden (Buy Me a Coffee o. ä.) und den Link in `js/config.js` bei `premium` eintragen.
 
-**Beschreibung für den Shop:**
+**Beschreibung (für einen späteren Shop):**
 > 96 druckfertige PDF-Vorlagen in 6 Farben: Wochenplaner, Essensplan mit Einkaufsliste, Putzplan, To-do-Liste und 12 Habit-Tracker für jeden Monat 2027. Ohne Datum, also jede Woche wiederverwendbar. Für nur 2 €. Danke für deine Unterstützung! 💚
 
 ## 3. Impressum ✅ erledigt
