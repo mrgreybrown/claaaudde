@@ -6,8 +6,8 @@ window.SITE = {
 
   // Buy-Me-a-Coffee-Profil, z. B. "https://buymeacoffee.com/deinname"
   support: "",
-  // Link zum Premium-Paket (Buy Me a Coffee → Shop/Extras)
-  premium: "",
+  // Link zum Premium-Paket (Shop-Link oder mailto: für Bestellung per E-Mail)
+  premium: "mailto:mrgreybrown@gmail.com?subject=Planerwerk%20Premium-Paket%202027&body=Hallo%2C%20ich%20m%C3%B6chte%20das%20Premium-Paket%20f%C3%BCr%202%20%E2%82%AC.",
 
   // Amazon-PartnerNet-Tracking-ID, z. B. "deinname-21"
   amazonTag: "",

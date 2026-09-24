@@ -219,7 +219,10 @@
   function initMoney() {
     if (SITE.support) document.querySelectorAll(".js-support").forEach((a) => { a.href = SITE.support; a.hidden = false; });
     if (SITE.premium) document.querySelectorAll(".js-premium").forEach((el) => {
-      el.hidden = false; el.querySelectorAll("a").forEach((a) => (a.href = SITE.premium));
+      el.hidden = false; el.querySelectorAll("a").forEach((a) => {
+        a.href = SITE.premium;
+        if (SITE.premium.startsWith("mailto:")) { a.textContent = "Per E-Mail bestellen →"; a.removeAttribute("target"); }
+      });
     });
     if (SITE.amazonTag && SITE.affiliate.length) {
       $("#aff-list").innerHTML = SITE.affiliate.map((a) =>
