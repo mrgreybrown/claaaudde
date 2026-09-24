@@ -5,8 +5,8 @@ Die Seite ist rein statisch (HTML/CSS/JS) und läuft auf GitHub Pages ohne laufe
 
 ## Einnahmen
 Alles wird in `js/config.js` eingestellt. Leere Felder werden auf der Seite ausgeblendet.
-- `kofi`: Link zu deinem Ko-fi-Profil (Spenden-Button)
-- `premium`: Link zum Premium-Paket im Ko-fi-Shop
+- `support`: Link zu deinem Buy-Me-a-Coffee-Profil (Spenden-Button)
+- `premium`: Link zum Premium-Paket (Buy Me a Coffee Shop)
 - `amazonTag`: deine Amazon-PartnerNet-ID, z. B. `name-21`
 
 ## Premium-Paket bauen
