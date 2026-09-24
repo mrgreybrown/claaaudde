@@ -4,9 +4,9 @@ window.SITE = {
   // Wird unten auf jedem gedruckten Blatt angezeigt (kostenlose Werbung).
   url: "mrgreybrown.github.io/claaaudde",
 
-  // Ko-fi-Profil, z. B. "https://ko-fi.com/deinname"
-  kofi: "",
-  // Link zum Premium-Paket im Ko-fi-Shop (Pay what you want)
+  // Buy-Me-a-Coffee-Profil, z. B. "https://buymeacoffee.com/deinname"
+  support: "",
+  // Link zum Premium-Paket (Buy Me a Coffee → Shop/Extras)
   premium: "",
 
   // Amazon-PartnerNet-Tracking-ID, z. B. "deinname-21"

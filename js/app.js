@@ -217,7 +217,7 @@
 
   // ---------- Monetarisierung (aus config.js) ----------
   function initMoney() {
-    if (SITE.kofi) document.querySelectorAll(".js-kofi").forEach((a) => { a.href = SITE.kofi; a.hidden = false; });
+    if (SITE.support) document.querySelectorAll(".js-support").forEach((a) => { a.href = SITE.support; a.hidden = false; });
     if (SITE.premium) document.querySelectorAll(".js-premium").forEach((el) => {
       el.hidden = false; el.querySelectorAll("a").forEach((a) => (a.href = SITE.premium));
     });
