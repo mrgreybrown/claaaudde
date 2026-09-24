@@ -40,7 +40,7 @@
   const now = new Date();
   const state = {
     type: "week", title: "", color: "salbei", start: iso(nextMonday()),
-    month: now.getMonth(), year: now.getFullYear(), items: ""
+    month: now.getMonth(), year: now.getFullYear(), items: null
   };
 
   function readUrl() {
@@ -60,11 +60,11 @@
     if (state.title) p.set("title", state.title);
     if (t.uses.includes("start")) p.set("start", state.start);
     if (t.uses.includes("month")) { p.set("m", state.month); p.set("y", state.year); }
-    if (t.uses.includes("items") && state.items && state.items !== t.items) p.set("items", state.items);
+    if (t.uses.includes("items") && state.items !== null && state.items !== t.items) p.set("items", state.items);
     history.replaceState(null, "", "?" + p.toString());
   }
 
-  const itemList = () => (state.items || TYPES[state.type].items || "")
+  const itemList = () => (state.items ?? TYPES[state.type].items ?? "")
     .split("\n").map((s) => s.trim()).filter(Boolean).slice(0, 16);
 
   // ---------- Renderer ----------
@@ -180,11 +180,11 @@
       $("#f-start").value = state.start;
       $("#f-month").value = state.month;
       $("#f-year").value = state.year;
-      $("#f-items").value = state.items || TYPES[state.type].items || "";
+      $("#f-items").value = state.items ?? TYPES[state.type].items ?? "";
       document.querySelectorAll(".swatch").forEach((b) => b.setAttribute("aria-pressed", b.dataset.c === state.color));
     };
 
-    type.addEventListener("change", () => { state.type = type.value; state.title = ""; state.items = ""; sync(); render(); });
+    type.addEventListener("change", () => { state.type = type.value; state.title = ""; state.items = null; sync(); render(); });
     $("#f-title").addEventListener("input", (e) => { state.title = e.target.value.slice(0, 60); render(); });
     $("#f-start").addEventListener("change", (e) => { if (e.target.value) { state.start = e.target.value; render(); } });
     $("#f-month").addEventListener("change", (e) => { state.month = +e.target.value; render(); });
@@ -195,7 +195,7 @@
       state.color = b.dataset.c; sync(); render();
     });
     document.querySelectorAll("[data-pick]").forEach((a) => a.addEventListener("click", (e) => {
-      e.preventDefault(); state.type = a.dataset.pick; state.title = ""; state.items = "";
+      e.preventDefault(); state.type = a.dataset.pick; state.title = ""; state.items = null;
       sync(); render(); $("#tool").scrollIntoView({ behavior: "smooth" });
     }));
 

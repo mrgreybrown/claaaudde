@@ -28,7 +28,8 @@ const MONTHS = ["01-Januar", "02-Februar", "03-Maerz", "04-April", "05-Mai", "06
       document.querySelectorAll(".sh-head p").forEach((p) => {
         if (/\d{2}\.\d{2}\. –/.test(p.textContent)) p.textContent = "Woche: ______________";
       });
-      document.querySelectorAll(".sheet h2 span, .tbl th small").forEach((s) => s.remove());
+      document.querySelectorAll(".sheet h2 span, .meal th small").forEach((s) => s.remove());
+      document.querySelector(".sh-foot").textContent = "Planerwerk Premium · Danke für deine Unterstützung!";
     });
     const dest = path.join(OUT, file);
     fs.mkdirSync(path.dirname(dest), { recursive: true });
