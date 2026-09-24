@@ -16,8 +16,7 @@ Nach 1–2 Minuten ist die Seite unter https://mrgreybrown.github.io/claaaudde/ 
 **Beschreibung für den Shop:**
 > 96 druckfertige PDF-Vorlagen in 6 Farben: Wochenplaner, Essensplan mit Einkaufsliste, Putzplan, To-do-Liste und 12 Habit-Tracker für jeden Monat 2027. Ohne Datum, also jede Woche wiederverwendbar. Zahl, was es dir wert ist, ab 1 €. Danke für deine Unterstützung! 💚
 
-## 3. Impressum ausfüllen (Pflicht, sobald Links drin sind)
-In `impressum.html` die Platzhalter in `[eckigen Klammern]` ersetzen: Name, ladungsfähige Anschrift, E-Mail.
+## 3. Impressum ✅ erledigt
 
 ## 4. Einmal verbreiten (30 Minuten, das bringt den Euro)
 Die Pins (1000×1500 px) liegen im Chat.
