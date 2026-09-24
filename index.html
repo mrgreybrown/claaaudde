@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planer zum Ausdrucken – kostenlos: Wochenplaner, Putzplan, Habit-Tracker, Essensplan</title>
+  <meta name="description" content="Kostenlose Planer-Vorlagen zum Ausdrucken: Wochenplaner, Essensplan mit Einkaufsliste, Putzplan, Habit-Tracker und To-do-Liste. Anpassen, als PDF speichern, fertig – ohne Anmeldung.">
+  <meta property="og:title" content="Planer zum Ausdrucken – kostenlos & anpassbar">
+  <meta property="og:description" content="Wochenplaner, Putzplan, Habit-Tracker, Essensplan & To-do-Liste als PDF. Ohne Anmeldung.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrgreybrown.github.io/claaaudde/">
+  <meta property="og:image" content="https://mrgreybrown.github.io/claaaudde/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mrgreybrown.github.io/claaaudde/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Planerwerk","url":"https://mrgreybrown.github.io/claaaudde/","applicationCategory":"LifestyleApplication","inLanguage":"de","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"description":"Kostenlose Planer zum Ausdrucken: Wochenplaner, Essensplan, Putzplan, Habit-Tracker und To-do-Liste."}</script>
+  <meta name="theme-color" content="#6f9676">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗓️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <style id="pagesize">@page { size: A4 portrait; margin: 0; }</style>
+</head>
+<body>
+  <div class="site">
+    <nav class="top">
+      <a class="brand js-sitename" href="./">Planerwerk</a>
+      <a class="btn-kofi js-kofi" hidden target="_blank" rel="noopener">☕ Unterstützen</a>
+    </nav>
+
+    <header class="hero">
+      <h1>Planer zum Ausdrucken – kostenlos &amp; anpassbar</h1>
+      <p>Vorlage wählen, Titel und Farbe anpassen, drucken oder als PDF speichern. Ohne Anmeldung, ohne Wasserzeichen.</p>
+      <div class="chips">
+        <a href="#tool" data-pick="week">Wochenplaner</a>
+        <a href="#tool" data-pick="meal">Essensplan</a>
+        <a href="#tool" data-pick="clean">Putzplan</a>
+        <a href="#tool" data-pick="habit">Habit-Tracker</a>
+        <a href="#tool" data-pick="todo">To-do-Liste</a>
+      </div>
+    </header>
+
+    <main id="tool" class="tool">
+      <form class="panel" onsubmit="return false">
+        <label>Vorlage <select id="f-type"></select></label>
+        <label>Titel <input id="f-title" maxlength="60" autocomplete="off"></label>
+        <div class="field"><span>Farbe</span><div id="f-colors" class="swatches"></div></div>
+        <label data-uses="start">Woche ab <input id="f-start" type="date"></label>
+        <div class="row" data-uses="month">
+          <label>Monat <select id="f-month"></select></label>
+          <label>Jahr <input id="f-year" type="number" min="2000" max="2100"></label>
+        </div>
+        <label data-uses="items">Einträge (einer pro Zeile) <textarea id="f-items" rows="7"></textarea></label>
+        <button id="btn-print" class="btn primary" type="button">🖨️ Drucken / als PDF speichern</button>
+        <button id="btn-share" class="btn" type="button">🔗 Link teilen</button>
+        <p class="hint">Tipp: Im Druckdialog „Als PDF speichern“ wählen und „Kopf- und Fußzeilen“ ausschalten.</p>
+
+        <div class="upsell js-premium" hidden>
+          <strong>Premium-Paket</strong>
+          <p>Alle Vorlagen in allen Farben plus 12 Habit-Tracker fürs ganze Jahr als ein PDF. Du zahlst, was du willst.</p>
+          <a class="btn" target="_blank" rel="noopener">Zum Paket →</a>
+        </div>
+      </form>
+
+      <div id="preview" class="preview"><article id="sheet" class="sheet"></article></div>
+    </main>
+
+    <section id="affiliate" class="aff" hidden>
+      <h2>Praktisches Zubehör für deine Planer</h2>
+      <ul id="aff-list"></ul>
+      <p class="small">* Werbung/Affiliate-Link: Wenn du darüber kaufst, bekomme ich eine kleine Provision. Für dich ändert sich am Preis nichts.</p>
+    </section>
+
+    <section class="content">
+      <h2>Wochenplaner zum Ausdrucken</h2>
+      <p>Der Wochenplaner zeigt alle sieben Tage mit Datum auf einer A4-Seite, dazu Platz für deine Top 3 der Woche und Notizen. Einfach das Startdatum wählen, das Datum wird automatisch eingetragen.</p>
+      <h2>Essensplan mit Einkaufsliste</h2>
+      <p>Plane Frühstück, Mittag, Abend und Snacks für die ganze Woche. Auf derselben Seite ist eine Einkaufsliste, sortiert nach Abteilungen. Das spart Zeit im Supermarkt und Lebensmittel.</p>
+      <h2>Putzplan-Vorlage</h2>
+      <p>Trag deine eigenen Aufgaben ein, z. B. Bad, Küche und Staubsaugen, und hake sie pro Wochentag ab. Ideal für WGs und Familien, am besten an den Kühlschrank hängen.</p>
+      <h2>Habit-Tracker als PDF</h2>
+      <p>Der Monats-Habit-Tracker im Querformat hat für jeden Tag ein Kästchen. Wochenenden sind markiert, und du kannst bis zu 16 eigene Gewohnheiten eintragen.</p>
+      <h2>To-do-Liste</h2>
+      <p>Die drei wichtigsten Aufgaben stehen oben, darunter Platz für alles andere, sortiert nach Erledigen, Anrufen und Besorgen.</p>
+
+      <h2>Häufige Fragen</h2>
+      <details><summary>Ist das wirklich kostenlos?</summary><p>Ja. Alle Vorlagen kannst du kostenlos und ohne Anmeldung drucken. Wenn sie dir gefallen, freue ich mich über einen Kaffee.</p></details>
+      <details><summary>Wie speichere ich den Planer als PDF?</summary><p>Klicke auf „Drucken“ und wähle als Drucker „Als PDF speichern“. Am Handy findest du das im Teilen-Menü unter „Drucken“.</p></details>
+      <details><summary>Werden meine Eingaben gespeichert?</summary><p>Nein, alles passiert in deinem Browser. Deine Einstellungen stehen nur im Link, damit du ihn teilen oder als Lesezeichen speichern kannst.</p></details>
+    </section>
+
+    <footer class="foot">
+      <a class="js-kofi" hidden target="_blank" rel="noopener">☕ Kaffee spendieren</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </footer>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
