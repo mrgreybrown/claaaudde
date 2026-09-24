@@ -2,7 +2,7 @@
 window.SITE = {
   name: "Planerwerk",
   // Wird unten auf jedem gedruckten Blatt angezeigt (kostenlose Werbung).
-  url: "mrgreybrown.github.io/claaaudde",
+  url: "planerwerk.github.io",
 
   // Buy-Me-a-Coffee-Profil, z. B. "https://buymeacoffee.com/deinname"
   support: "",
